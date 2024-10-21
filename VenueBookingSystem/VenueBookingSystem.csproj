@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B6783F94-1A0E-4BAA-B068-0AC897EA7893}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>VenueBookingSystem</RootNamespace>
+    <AssemblyName>VenueBookingSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminMainMenuPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMainMenuPage.Designer.cs">
+      <DependentUpon>AdminMainMenuPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUpdateBookingcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUpdateBookingcs.Designer.cs">
+      <DependentUpon>AdminUpdateBookingcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateBooking.Designer.cs">
+      <DependentUpon>CreateBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eqipments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eqipments.Designer.cs">
+      <DependentUpon>Eqipments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenuPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenuPage.Designer.cs">
+      <DependentUpon>MainMenuPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageMyProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageMyProfile.Designer.cs">
+      <DependentUpon>ManageMyProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageProfiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageProfiles.Designer.cs">
+      <DependentUpon>ManageProfiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageVenues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageVenues.Designer.cs">
+      <DependentUpon>ManageVenues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonitorBokings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonitorBokings.Designer.cs">
+      <DependentUpon>MonitorBokings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyBookings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyBookings.Designer.cs">
+      <DependentUpon>MyBookings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyProfile.Designer.cs">
+      <DependentUpon>MyProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecurringBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecurringBooking.Designer.cs">
+      <DependentUpon>RecurringBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateBooking.Designer.cs">
+      <DependentUpon>UpdateBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserID.cs" />
+    <Compile Include="Users.cs" />
+    <Compile Include="Venue.cs" />
+    <Compile Include="VenueBookingSystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VenueBookingSystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Venues.cs" />
+    <EmbeddedResource Include="AdminMainMenuPage.resx">
+      <DependentUpon>AdminMainMenuPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUpdateBookingcs.resx">
+      <DependentUpon>AdminUpdateBookingcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateBooking.resx">
+      <DependentUpon>CreateBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenuPage.resx">
+      <DependentUpon>MainMenuPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageProfiles.resx">
+      <DependentUpon>ManageProfiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageVenues.resx">
+      <DependentUpon>ManageVenues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonitorBokings.resx">
+      <DependentUpon>MonitorBokings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyBookings.resx">
+      <DependentUpon>MyBookings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyProfile.resx">
+      <DependentUpon>MyProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RecurringBooking.resx">
+      <DependentUpon>RecurringBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateBooking.resx">
+      <DependentUpon>UpdateBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="VenueBookingSystemDataSet.xsc">
+      <DependentUpon>VenueBookingSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VenueBookingSystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VenueBookingSystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VenueBookingSystemDataSet.xss">
+      <DependentUpon>VenueBookingSystemDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-10-13 011438.png" />
+    <None Include="Resources\Screenshot 2024-10-13 011551.png" />
+    <None Include="Resources\Screenshot 2024-10-13 011715.png" />
+    <None Include="Resources\Screenshot 2024-10-13 011701.png" />
+    <None Include="Resources\Screenshot 2024-10-13 011823.png" />
+    <Content Include="VenueBookingSystem.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

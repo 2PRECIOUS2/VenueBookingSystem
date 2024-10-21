@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="VenueBookingSystemDataSet" targetNamespace="http://tempuri.org/VenueBookingSystemDataSet.xsd" xmlns:mstns="http://tempuri.org/VenueBookingSystemDataSet.xsd" xmlns="http://tempuri.org/VenueBookingSystemDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="VenueBookingSystemConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="VenueBookingSystemConnectionString (Settings)" PropertyReference="ApplicationSettings.VenueBookingSystem.Properties.Settings.GlobalReference.Default.VenueBookingSystemConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BookingTableAdapter" GeneratorDataComponentClassName="BookingTableAdapter" Name="Booking" UserDataComponentName="BookingTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="VenueBookingSystemConnectionString (Settings)" DbObjectName="Booking" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT TypeOfEvent, StartDateTime, EndDateTime FROM Booking</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VenueTableAdapter" GeneratorDataComponentClassName="VenueTableAdapter" Name="Venue" UserDataComponentName="VenueTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="VenueBookingSystemConnectionString (Settings)" DbObjectName="Venue" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT VenueName, VenueLocation, VenueCapacity, CategoryOfVenue FROM Venue</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="VenueBookingSystemDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="VenueBookingSystemDataSet" msprop:Generator_DataSetName="VenueBookingSystemDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Booking" msprop:Generator_RowEvHandlerName="BookingRowChangeEventHandler" msprop:Generator_RowDeletedName="BookingRowDeleted" msprop:Generator_RowDeletingName="BookingRowDeleting" msprop:Generator_RowEvArgName="BookingRowChangeEvent" msprop:Generator_TablePropName="Booking" msprop:Generator_RowChangedName="BookingRowChanged" msprop:Generator_RowChangingName="BookingRowChanging" msprop:Generator_TableClassName="BookingDataTable" msprop:Generator_RowClassName="BookingRow" msprop:Generator_TableVarName="tableBooking" msprop:Generator_UserTableName="Booking">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Venue" msprop:Generator_RowEvHandlerName="VenueRowChangeEventHandler" msprop:Generator_RowDeletedName="VenueRowDeleted" msprop:Generator_RowDeletingName="VenueRowDeleting" msprop:Generator_RowEvArgName="VenueRowChangeEvent" msprop:Generator_TablePropName="Venue" msprop:Generator_RowChangedName="VenueRowChanged" msprop:Generator_RowChangingName="VenueRowChanging" msprop:Generator_TableClassName="VenueDataTable" msprop:Generator_RowClassName="VenueRow" msprop:Generator_TableVarName="tableVenue" msprop:Generator_UserTableName="Venue">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
