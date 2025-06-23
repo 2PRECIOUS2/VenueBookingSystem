@@ -19,7 +19,7 @@ My Role
 - Created the Access database and SQL queries
 - Implemented features like rebooking, updating, deleting, and venue search
 - Wrote complete user and technical documentation
-- 
+  
  Key Features
 Login support for students and lecturers
 Venue Search Filter by category, capacity, and availability
